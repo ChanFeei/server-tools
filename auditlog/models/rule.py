@@ -513,7 +513,7 @@ class AuditlogRule(models.Model):
             vals = {
                 'name': _("View logs"),
                 'res_model': 'auditlog.log',
-                'src_model': rule.model_id.model,
+                # 'src_model': rule.model_id.model,  #retired in 13.0
                 'binding_model_id': rule.model_id.id,
                 'domain': domain,
             }
